@@ -1,0 +1,92 @@
+:root {
+  --bg-color: #f0f2f5;
+  --card-bg: #ffffff;
+  --text-main: #1a1a1a;
+  --text-sub: #666666;
+  --border-color: #dddddd;
+  --primary-color: #007bff;
+  --input-bg: #ffffff;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-main: #e0e0e0;
+  --text-sub: #b0b0b0;
+  --border-color: #333333;
+  --input-bg: #2d2d2d;
+}
+
+.app-wrapper {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dark-mode-toggle {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.form-card input, .form-card select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--input-bg);
+  color: var(--text-main);
+}
+
+.btn-add {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 8px solid var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.course-card h2 { margin: 10px 0; color: var(--text-main); }
+.course-card p { margin: 5px 0; color: var(--text-sub); }
+.course-card .time { font-weight: bold; color: var(--primary-color); margin-top: 10px; }
